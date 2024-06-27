@@ -1,0 +1,705 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+ body a{
+    font-weight: 600;
+    color: black;
+} 
+
+#navbar {
+    position:fixed; 
+    float: left;
+    z-index: 1;
+    width: 220px;
+    height: 100vh;
+    text-align: center;
+
+    img {
+        width: 100px;
+        border-radius: 50px;
+    }
+
+    .main {
+        background-color: rgb(238, 238, 238);
+    }
+
+    ul {
+        padding: 0;
+        text-align: justify;
+
+        li {
+            margin: 10px;
+            list-style: none;
+            font-size: 1rem;
+        }
+
+        i {
+            padding: 10px;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        li:hover{
+           box-shadow:0px 0px 4px 0.5px black ;
+           border-radius: 10px;
+           color: black;
+        }
+       
+    }
+}
+nav{
+     position: fixed;
+     background-color: rgb(234, 247, 250);
+     z-index: 10;
+    left: 270px;
+    top:20px;
+    width: 1050px;
+    border-radius: 5px;
+    .col{
+        display: flex;
+        justify-content:left;
+    }
+    i{
+        font-size: 1.1rem;
+    }
+    input{
+        display: none;
+
+    }
+    img{
+        width: 50px;
+        border-radius: 50px;
+    }
+    a{padding: 10px;
+        text-decoration: none;
+    }
+   .col2{
+    display: flex;
+   justify-content: center;
+   }
+   a:hover{
+    color: black;
+   }
+}
+#section{
+    background-color: rgb(246, 251, 252);
+    position: relative;
+    height: 100vh;
+    top: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    h1{
+        text-decoration: overline;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        left: 280px;
+    }
+    .row1{
+    display: flex;
+    position: relative;
+    left: 130px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+    .col{
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        height: 20vh;
+        background-color: rgb(255, 255, 255);
+    p{
+        margin: 0;
+        padding: 0;
+        font-size: .9rem;
+       filter: brightness(3);
+       font-weight: 500;
+    }
+    h4{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    h2{
+       position: relative;
+       top: 25%;
+       i{
+        /* border: 1px solid black; */
+        padding: 15px;
+        border-radius: 10px;
+       }
+    }
+    span{
+        margin-top: 20px;
+    }
+    h6{ height: 30px;
+        padding: 5px;
+        margin-top: 20px;
+        i{
+            padding: 3px;
+        }
+    }
+    }
+    .col1{
+        h2{
+            i{  color: skyblue;
+                background-color: rgb(230, 253, 245);
+            }
+        }
+        h6{
+            color:red;
+            background-color: rgb(252, 239, 238);
+        
+        }
+    }
+    .col2{
+        h2{
+            i{  color:orange;
+                background-color: rgb(255, 242, 216);
+            }
+        }
+        h6{
+            color: green;
+            background-color: rgb(224, 255, 224);
+        }
+    }
+    .col3{
+        h2{
+            i{  color:rgba(255, 0, 0, 0.822);
+                background-color: rgb(252, 239, 238);
+            }
+        }
+        h6{
+            color: green;
+            background-color: rgb(224, 255, 224);
+        }
+    }
+    .row2{
+        display: flex;
+        position: relative;
+        left: 130px;
+        top: 10px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        .col{
+            height: 80vh;
+           #span{
+            display: flex;
+           justify-content: space-between;
+           
+            h6{
+                display: inline;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+            }
+            p{
+                padding: 5px;
+                font-weight: bold;
+                filter: none;
+                background-color:rgb(227, 250, 224) ;
+                color:green;
+            }
+           }
+           li{
+            list-style: none;
+           }
+           .span{
+            display: flex;
+            gap: 20px;
+            i{
+                width: 50px;
+                height: 50px;
+                padding: 10px;
+                font-size: 2rem;
+                border-radius: 10px;
+            }
+            #i1{
+                color: skyblue;
+                background-color: rgb(230, 253, 245);
+            }
+            #i2{
+                color:red;
+                background-color: rgb(252, 239, 238);
+            }
+            #i3{
+                background-color:rgba(60, 253, 60, 0.199) ;
+                color: green;
+            }
+            #i4{
+                color:orange;
+                background-color: rgb(255, 242, 216);
+            }
+            #i5{
+                background-color: rgb(203, 203, 252);
+                color: blue;
+            }
+            input{
+        
+                    width: 25px;
+                    height: 25px;
+                    padding: 10px;
+                    margin-top:10px;
+            
+            }
+           }
+         b{
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.781);
+         }
+         .line{
+            box-shadow: 0px 0px .5px .5px grey;
+            height: 1vh;
+            border-radius: 10px;
+            width: 70%;
+            position: relative;
+            left: 80px;
+            bottom: 15px;
+            background: linear-gradient(to right, rgba(0, 0, 255, 0.76) 50%, rgb(255, 255, 255) 50%);
+         }
+         .line1{
+            box-shadow: 0px 0px .5px .5px grey;
+            height: 1vh;
+            border-radius: 10px;
+            width: 70%;
+            position: relative;
+            left: 80px;
+            bottom: 15px;
+            background: linear-gradient(to right, rgba(0, 0, 255, 0.76) 70%, rgb(255, 255, 255) 50%);
+         }
+         .line2{
+            box-shadow: 0px 0px .5px .5px grey;
+            height: 1vh;
+            border-radius: 10px;
+            width: 70%;
+            position: relative;
+            left: 80px;
+            bottom: 15px;
+            background: linear-gradient(to right, rgba(0, 0, 255, 0.76) 60%, rgb(255, 255, 255) 50%);
+         }
+         .line3{
+            box-shadow: 0px 0px .5px .5px grey;
+            height: 1vh;
+            border-radius: 10px;
+            width: 70%;
+            position: relative;
+            left: 80px;
+            bottom: 15px;
+            background: linear-gradient(to right, rgba(0, 0, 255, 0.76) 80%, rgb(255, 255, 255) 50%);
+         }
+         .line4{
+            box-shadow: 0px 0px .5px .5px grey;
+            height: 1vh;
+            border-radius: 10px;
+            width: 70%;
+            position: relative;
+            left: 80px;
+            bottom: 15px;
+            background: linear-gradient(to right, rgba(0, 0, 255, 0.76) 50%, rgb(255, 255, 255) 50%);
+         }
+        }
+    }
+    .row3{
+        display: flex;
+        position: relative;
+        left: 130px;
+        top: 10px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      .col{
+        flex-direction: column;
+        height: 90vh;
+        margin-top: 10px;
+        justify-content:start;
+        span{
+            h6{
+                margin-left: 20px;
+                display: inline;
+            }
+            p{
+                position: relative;
+                float: right;
+                margin-right: 50px;
+                background: #00000033;
+                padding: 5px;
+            }
+        }
+        .graph{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            position: relative;
+            left: 60px;
+            top: 30px;
+
+        .graphline{
+               position: relative;
+               left: 50px;
+               bottom: 25px;
+               width: 75%;
+               height: 1px;
+               border-top:dotted;
+               border-color:beige;
+            }
+            .graphline1{
+                position: relative;
+                left: 50px;
+                bottom: 25px;
+                width: 75%;
+                height: 1px;
+                border-top:1.5px solid grey;
+             }
+        }
+        #month{
+            margin-left: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            li{
+                list-style: none;
+                font-size: .9rem;
+                padding: 0;
+                margin: 10px;
+            }
+        }
+        #level{
+            position: relative;
+            bottom: 360px;
+            left: 80px;
+            display: flex;
+            gap: 40px;
+           span{
+            display: flex;
+            gap: 2px;
+            transform: rotate(180deg);
+
+             .level1{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 200px;
+            }
+            .level2{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 250px;
+            }
+            .level3{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 180px;
+            }
+            .level4{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 170px;
+            }
+            .level5{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 220px;
+            }
+            .level6{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 150px;
+            }
+            .level7{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 170px;
+            }
+            .level8{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 220px;
+            }
+            .level9{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 180px;
+            }
+            .level10{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 170px;
+            }
+            .level11{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 250px;
+            }
+            .level12{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 140px;
+            }
+            .level13{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 160px;
+            }
+            .level14{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 230px;
+            }
+            .level15{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 150px;
+            }
+            .level16{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 190px;
+            }
+            .level17{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 240px;
+            }
+            .level18{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 169px;
+            }
+            .level19{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 160px;
+            }
+            .level20{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 240px;
+            }
+            .level21{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 190px;
+            }
+            .level22{
+                background-color: rgb(162, 0, 255);
+                width: 7px;
+                height: 150px;
+            }
+            .level23{
+                background-color: rgb(0, 4, 255);
+                width: 7px;
+                height: 270px;
+            }
+            .level24{
+                background-color: rgb(0, 255, 98);
+                width: 7px;
+                height: 170px;
+            }
+           } 
+        }
+        #para{
+            transform: rotate(90deg);
+            position: relative;
+            bottom: 250px;
+            right: 300px;
+        }
+        #color{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            position: relative;
+            bottom: 300px;
+      }
+      li{
+        list-style: none;
+        display: flex;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        .pink{
+            width: 10px ;
+            height: 10px;
+            background-color: blueviolet;
+        }
+        .blue{
+            width: 10px ;
+            height: 10px;
+            background-color: rgb(46, 43, 226);
+        }
+        .green{
+            width: 10px ;
+            height: 10px;
+            background-color: rgb(95, 226, 43);
+        }
+      }
+
+     
+    }
+}
+#column2{
+
+    span{
+    .skyblue{
+          background-color: rgb(231, 247, 253);
+          color: rgb(0, 179, 250);
+          padding: 2px;
+          margin: 0;
+          filter: none;
+    }
+}
+    .paragraph{
+      margin-top: 20px;
+      padding: 5px;
+      text-align: justify;
+    }
+   .report{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 0.836);
+    i{
+        padding: 5px;
+    }
+  
+   .p1{
+      background-color: rgb(236, 250, 236);
+      color: green;
+      filter: none;
+   }
+   .p2{
+        background-color: rgb(236, 250, 236);
+        color: green;
+        filter: none;
+   }
+   .p3{
+    background-color: rgb(250, 236, 236);
+    color:red;
+    filter: none;
+ }
+ .p4{
+    background-color: rgb(236, 250, 236);
+    color: green;
+    filter: none;
+ }
+ .p5{
+    background-color: rgb(250, 236, 236);
+    color:red;
+    filter: none;
+ }
+   } 
+}
+.row4{
+    display: flex;
+    position: relative;
+    left: 130px;
+    top: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   .col{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .col1{
+    h6{
+        padding: 10px;
+        margin-left: 20px;
+        color: black;
+        background-color: transparent;
+
+    }
+    p{
+        padding: 10px;
+        margin-left: 20px;
+    }
+    #span{
+        display: flex;
+        gap: 400px;
+    }
+    button{
+        background-color: rgba(83, 184, 252, 0.795);
+        color:white;
+        font-weight: bold;
+        padding: 7px 10px;
+        border: none;
+        box-shadow: 0px 0px 1px 1px rgba(0, 162, 255, 0.877);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+   }
+   .col2{
+    img{
+        position: relative;
+        top:20px;
+        border-radius: 50%;
+    }
+    #span1{
+        display: flex;
+        gap: 50px;
+        h6{
+            background-color: transparent;
+            color: black;
+            margin-top: 75px;
+        }
+        p{
+            margin-top: 75px;
+            text-align: center;
+            background-color: rgba(255, 228, 196, 0.829);
+           padding: 5px 5px 2px;
+            border-radius: 5px;
+            filter: none;
+        }
+    }
+    #span2{
+     h6{
+        background-color: transparent;
+        color: black;
+     }
+     h6,p{
+        position: relative;
+        left: 100px;
+        bottom: 110px;
+     }
+    }
+    #span3{
+        display: flex;
+        gap: 10px;
+        position: relative;
+        bottom: 100px;
+        left: 50px;
+    }
+    #btn1{
+       background-color: rgb(219, 250, 219);
+       color: green;
+       padding: 7px 20px;
+       border: none;
+    }
+    #btn2{
+        background-color: rgb(255, 230, 230);
+        color:red;
+        padding: 7px 20px;
+        border: none;
+    }
+    i{
+        padding: 5px;
+    }
+   }
+ 
+}
+
+}
+.space{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(246, 251, 252);
+   }

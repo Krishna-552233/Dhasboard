@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup" id="up">
+            <h1>SIGN IN</h1>
+     <ul>
+       <li>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+       </li>
+       </ul>
+      <form action="">
+        <input type="text" class="input" placeholder =" Username" required>
+        <input type="password"  class="input" placeholder=" Password" required>
+        <h4>Forget Password?</h4>
+        <a href="Dhashboard.html">SIGN IN</a>
+      </form>
+        </div>
+        <div class="signin" id="in">
+            <h1>Create Account</h1>
+           <ul>
+                <li>
+                <i class="fa-brands fa-google"></i>
+                 <i class="fa-brands fa-facebook"></i>
+                 <i class="fa-brands fa-instagram"></i>
+                </li>
+               </ul> 
+                <form >
+                    <input type="text" class="input" placeholder=" Fullname" required>
+                    <input type="email" class="input" placeholder=" email" required>
+                    <input type="password" class="input" placeholder=" password" required>
+                  <a href="Dhashboard.html">SIGN UP</a> 
+                  </form>
+        </div>
+        <div class="welcome" id="wel">
+            <h1>Welcome Back</h1>
+            <p>To keep connected with us please login your personal info</p>
+          <button class="btn" id="btn2">SIGN IN</button>
+        </div>
+     <div class="hello" id="hel">
+      <h1>Hello Friends</h1>
+       <p>Enter your personal Detail and Enjoy your journey with us</p>
+       <button class="btn1" id="btn3">SIGN UP</button>
+    </div>
+    </div>
+    <script>
+    var up = document.querySelector(".signup")
+    var int = document.querySelector(".signin")
+    var wel = document.querySelector(".welcome")
+    var hello = document.querySelector(".hello")
+    var btn2 = document.getElementById("btn2")
+    var btn3 = document.getElementById("btn3")
+     
+    btn3.addEventListener ("click" ,function(){
+    hello.style.opacity = "0"; 
+    hello.style.zIndex = "0";
+    up.style.opacity ="0"; 
+    hello.style.zIndex = "0";
+    int.style.opacity ="1";
+    int.style.zIndex = "1";
+   int.style.transform ="translateX(-100%)";
+  int.style.transition = "1s all ";
+    wel.style.opacity ="1";
+    wel.style.zIndex = "1";
+  wel.style.transform ="translateX(100%)";
+   wel.style.transition = "1s all";
+        
+    });
+    btn2.addEventListener ("click" ,function(){
+   wel.style.opacity = "0";
+   wel.style.zIndex = "0";
+   hello.style.opacity = "1"; 
+   hello.style.zIndex = "1";
+   hello.style.borderRadius = "0% 30% 30% 0%";
+   hello.style.transform ="translateX(-100%)";
+  hello.style.transition = "1s all ";
+   up.style.opacity = "1";
+   up.style.zIndex = "1";
+  up.style.transform ="translateX(100%)";
+  up.style.transition = "1s all";
+   int.style.zIndex = "0";
+   int.style.opacity="0";
+      
+    });
+
+    </script>
+</body>
+</html>
